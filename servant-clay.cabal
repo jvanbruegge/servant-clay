@@ -1,0 +1,28 @@
+name:                servant-clay
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/jvanbruegge/servant-clay#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Jan van Brügge
+maintainer:          supermanitu@gmail.com
+copyright:           2018 Jan van Brügge
+category:             Web, Servant
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Servant.CSS.Clay
+  build-depends:       base       >= 4.7  && < 5
+                     , http-media >= 0.7  && < 0.8
+                     , text       >= 1.2  && < 1.3
+                     , clay       >= 0.12 && < 0.14
+                     , servant    >= 0.13 && < 0.14
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jvanbruegge/servant-clay
